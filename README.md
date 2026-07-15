@@ -16,7 +16,7 @@ Every flag is in the `LCCTF{...}` format and spells out a real shark fact.
 |6|2|robots.txt + hex decode; easy|
 |8|4|three-layer cipher peel|
 |8|4|no exploit required, just extra points for getting all previous flags|
-|9|10|bonus: injection + SUID + base64 + "key is Flag 8" + python and CLI tooling required|
+|9|12|bonus: injection + SUID + base64 + "key is Flag 8" + python and CLI tooling required|
 
 
 ## Build & run
