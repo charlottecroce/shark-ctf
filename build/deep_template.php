@@ -2,8 +2,6 @@
 /**
  * deep_template.php -> /var/www/html/deep/<slug>/index.php  (slug from Flag 8)
  * Bonus "megalodon": command injection (Flag-4/5)
- *
- * timeout + head bound cost so 20+ students can't stall the box.
  */
 $q = isset($_GET['q']) ? $_GET['q'] : '';
 $out = null;
