@@ -1,0 +1,8 @@
+solutions.md
+**/solutions.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+.git
+.gitignore
+README*

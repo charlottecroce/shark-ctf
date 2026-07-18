@@ -5,63 +5,121 @@ nothing to see here
 */
 
 :root{
-  --deep:#06283d;
-  --mid:#1363a6;
-  --surf:#256d9c;
-  --foam:#e8f3f8;
-  --sand:#f6f2e9;
-  --coral:#ff8c69;
-  --ink:#0b2233;
+  --deep:#0a3d62;   /* header / dark panels */
+  --mid:#3a6ea5;    /* links / buttons      */
+  --surf:#0a3d62;   /* labels               */
+  --foam:#dfeaf2;   /* light panel fill     */
+  --sand:#d6dfe6;   /* page background      */
+  --coral:#b5451b;  /* muted accent         */
+  --ink:#1a1a1a;
 }
+
 *{box-sizing:border-box}
+
 body{
   margin:0;
-  font-family:"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
+  font-family:Verdana,Tahoma,Arial,sans-serif;
+  font-size:13px;
   color:var(--ink);
   background:var(--sand);
-  line-height:1.55;
+  line-height:1.4;
 }
-.hero{
-  position:relative;
-  background:linear-gradient(160deg,var(--deep),var(--mid));
-  color:var(--foam);
-  padding:5rem 1.5rem 6rem;
-  text-align:center;
-  overflow:hidden;
-}
-.hero-inner{max-width:720px;margin:0 auto;position:relative;z-index:2}
-.eyebrow{text-transform:uppercase;letter-spacing:.28em;font-size:.72rem;opacity:.75;margin:0 0 .4rem}
-h1{font-size:clamp(3rem,10vw,6rem);margin:0;font-weight:800;letter-spacing:-.03em}
-.dot{color:var(--coral)}
-.tagline{font-size:1.15rem;opacity:.9;margin:.6rem auto 0;max-width:34ch}
-.waves{
-  position:absolute;left:0;right:0;bottom:-1px;height:60px;
-  background:radial-gradient(circle at 10px -8px,var(--sand) 12px,transparent 13px) repeat-x;
-  background-size:24px 24px;
-}
-.wrap{max-width:960px;margin:0 auto;padding:3rem 1.5rem}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.1rem}
-.card{
-  background:#fff;border:1px solid #e4ddcd;border-radius:14px;padding:1.4rem;
-  box-shadow:0 8px 24px -18px rgba(6,40,61,.5);
-}
-.card h2{margin:.5rem 0 .4rem;font-size:1.15rem}
-.card p{margin:0;font-size:.95rem;color:#3a4a57}
-.tag{
-  display:inline-block;font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;
-  color:var(--surf);background:var(--foam);padding:.2rem .55rem;border-radius:999px;font-weight:700;
-}
-.lookup-cta{
-  margin-top:2.5rem;text-align:center;background:var(--deep);color:var(--foam);
-  padding:2.5rem 1.5rem;border-radius:18px;
-}
-.lookup-cta h2{margin:0 0 .3rem}
-.lookup-cta p{opacity:.85;margin:0 0 1.2rem}
-.btn{
-  display:inline-block;background:var(--coral);color:#3a1200;text-decoration:none;
-  font-weight:700;padding:.7rem 1.4rem;border-radius:999px;transition:transform .12s ease;
-}
-.btn:hover{transform:translateY(-2px)}
-.foot{text-align:center;padding:2.5rem 1rem;color:#7a7059;font-size:.85rem}
-a{color:var(--mid)}
 
+/* ---- header bar ---- */
+.hero{
+  background:var(--deep);
+  color:#fff;
+  padding:0.9rem 1.5rem;
+  text-align:left;
+  border-bottom:2px solid #06283d;
+}
+.hero-inner{max-width:760px;margin:0 auto}
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:10px;
+  color:#a9c4d8;
+  margin:0 0 .15rem;
+}
+h1{
+  font-size:1.9rem;
+  margin:0;
+  font-weight:bold;
+  letter-spacing:normal;
+}
+.dot{color:var(--coral)}
+.tagline{
+  font-size:12px;
+  color:#cfe0ec;
+  margin:.25rem 0 0;
+  max-width:60ch;
+}
+
+/* ---- waves bar (removed) ---- */
+.waves{display:none}
+
+/* ---- main column ---- */
+.wrap{max-width:760px;margin:0 auto;padding:1.5rem}
+
+.facts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:.8rem;
+}
+.card{
+  background:#fff;
+  border:1px solid #9aa7b0;
+  padding:.8rem;
+}
+.card h2{margin:.2rem 0 .3rem;font-size:1.05rem}
+.card p{margin:0;font-size:12px;color:#333}
+
+.tag{
+  display:inline-block;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  color:var(--surf);
+  background:var(--foam);
+  border:1px solid #b7cbdb;
+  padding:.1rem .4rem;
+  font-weight:bold;
+}
+
+.lookup-cta{
+  margin-top:1.5rem;
+  text-align:center;
+  background:var(--deep);
+  color:#fff;
+  padding:1.2rem 1rem;
+  border:1px solid #06283d;
+}
+.lookup-cta h2{margin:0 0 .2rem;font-size:1.15rem}
+.lookup-cta p{color:#cfe0ec;margin:0 0 .8rem;font-size:12px}
+
+/* ---- beveled button (works on <a> and <button>) ---- */
+.btn{
+  display:inline-block;
+  background:var(--mid);
+  color:#fff;
+  font:bold 12px Verdana,Arial,sans-serif;
+  padding:.35rem .9rem;
+  border:1px solid;
+  border-color:#7aa5cc #16324b #16324b #7aa5cc;
+  cursor:pointer;
+}
+.btn:active{
+  border-color:#16324b #7aa5cc #7aa5cc #16324b;
+}
+
+.foot{
+  text-align:center;
+  padding:1.2rem 1rem;
+  margin-top:1rem;
+  border-top:1px solid #b0bcc4;
+  color:#556;
+  font-size:11px;
+}
+
+a{color:#0033aa;text-decoration:underline}
+a:visited{color:#551a8b}

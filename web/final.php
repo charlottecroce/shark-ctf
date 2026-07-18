@@ -53,30 +53,28 @@ if ($submitted) {
   <title>Final flag</title>
   <link rel="stylesheet" href="/style.css">
   <style>
-    .final{max-width:560px;margin:3rem auto;padding:0 1.5rem}
-    .box{background:#fff;border:1px solid #e4ddcd;border-radius:16px;padding:2rem;
-         box-shadow:0 8px 24px -18px rgba(6,40,61,.5)}
-    label{display:block;font-size:.8rem;font-weight:700;color:var(--surf);
-          margin:.8rem 0 .25rem}
-    input[type=text]{width:100%;padding:.65rem .9rem;border:1px solid #cdd7de;
-          border-radius:9px;font-size:.95rem;font-family:monospace}
-    .win{margin-top:1.5rem;padding:1.2rem;border-radius:12px;background:#0d3b1e;
-         color:#c9ffd8;text-align:center}
-    .win code{font-size:1.05rem;word-break:break-word}
-    .err{margin-top:1.2rem;padding:.8rem 1rem;border-radius:10px;
-         background:#fdeceb;color:#8a2b20}
-    .submit{margin-top:1.4rem}
-    .depths{margin-top:1.4rem;padding:1.7rem 1.5rem;border-radius:12px;
-         background:radial-gradient(circle at 50% -30%,#0a1f2e,#02060a 72%);
-         color:#5f8095;text-align:center;border:1px solid #0d2635;
-         box-shadow:inset 0 0 70px -20px #000;font-family:"Courier New",monospace}
-    .depths .eyebrow{text-transform:uppercase;letter-spacing:.34em;font-size:.6rem;
-         color:#2f5266;margin:0 0 .7rem}
-    .depths p{margin:.25rem 0}
+    .final{max-width:560px;margin:1.5rem auto;padding:0 1.5rem}
+    .box{background:#fff;border:1px solid #9aa7b0;padding:1.2rem}
+    label{display:block;font-size:11px;font-weight:bold;color:var(--surf);
+          margin:.7rem 0 .2rem}
+    input[type=text]{width:100%;padding:.4rem .5rem;border:1px solid #7f8c94;
+          font-size:13px;font-family:monospace}
+    .win{margin-top:1.2rem;padding:1rem;background:#0d3b1e;
+         color:#c9ffd8;text-align:center;border:1px solid #062915}
+    .win code{font-size:13px;word-break:break-word}
+    .err{margin-top:1rem;padding:.6rem .8rem;
+         background:#fdeceb;color:#8a2b20;border:1px solid #d9a29c}
+    .submit{margin-top:1.2rem}
+    .depths{margin-top:1.2rem;padding:1.2rem;
+         background:#02060a;color:#5f8095;text-align:center;
+         border:1px solid #0d2635;font-family:"Courier New",monospace}
+    .depths .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:10px;
+         color:#2f5266;margin:0 0 .5rem}
+    .depths p{margin:.2rem 0}
     .depths em{color:#c65b3a;font-style:normal}
-    .depths a{display:inline-block;margin-top:1.1rem;color:#7fd7ff;font-weight:700;
-         text-decoration:none;letter-spacing:.03em}
-    .depths a:hover{color:#c9f5ff;text-shadow:0 0 12px #1a90c0}
+    .depths a{display:inline-block;margin-top:.9rem;color:#7fd7ff;font-weight:bold;
+         text-decoration:underline;letter-spacing:.02em}
+    .depths a:hover{color:#c9f5ff}
   </style>
 </head>
 <body>

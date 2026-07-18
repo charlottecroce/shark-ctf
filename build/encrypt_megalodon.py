@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 
-  Encrypt:  python3 encrypt_megalodon.py enc -k 'KEY' -i message.txt -o sealed.bin
-  Decrypt:  python3 encrypt_megalodon.py dec -k 'KEY' -i sealed.bin
+  Encrypt:  python3 encrypt_megalodon.py enc -k 'KEY' -i message.txt -o last_sighting.bin
+  Decrypt:  python3 encrypt_megalodon.py dec -k 'KEY' -i last_sighting.bin
 
   Hint: the key is directly under the ASCII stingray in /* final.php */.
 

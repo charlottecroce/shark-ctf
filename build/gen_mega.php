@@ -58,9 +58,7 @@ file_put_contents('/opt/megalodon/fossils.txt',
     "Ptychodus           Ptychodus mortoni         extinct ~85 Ma, shell-crusher\n" .
     "Stethacanthus       Stethacanthus altonensis  extinct ~320 Ma, 'anvil' dorsal\n");
 
-// the sealed flag: RAW ciphertext bytes, hidden dotfile, ROOT-ONLY.
-// A plain cat as www-data is denied; the SUID base64 (Flag 5) reads it and
-// prints one clean base64 layer - no double-encoding.
+// A plain cat as www-data is denied; the SUID base64 (Flag 5) reads it and prints one clean base64 layer
 file_put_contents('/opt/megalodon/.last_sighting', $cipherBytes);
 
 chmod('/opt/megalodon', 0755);
